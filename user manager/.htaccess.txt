@@ -1,0 +1,19 @@
+AddDefaultCharset utf-8
+
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+# Make the backend accessible via url: http://site/backend.
+RewriteRule ^back back.php
+
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+#php_value post_max_size 100M
+#php_value upload_max_filesize 100M

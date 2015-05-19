@@ -1,0 +1,15 @@
+.DS_Store
+protected/config/front.php
+protected/config/back.php
+.hg/*
+framework
+assets/*
+nbproject
+protected/runtime/*
+desktop.ini
+.htaccess
+.buildpath
+.settings/
+.project
+protected/config/yii-debug-toolbar/
+workspace
